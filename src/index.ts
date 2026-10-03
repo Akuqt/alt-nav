@@ -1,7 +1,7 @@
-import { fetchWithGoogleMaps } from "@/providers/GoogleMaps";
-import { fetchWithMapbox } from "@/providers/Mapbox";
-import { fetchWithOSRM } from "@/providers/OSRM";
-import { fetchWithORS } from "@/providers/OpenRouteService";
+import { fetchWithGoogleMaps } from "@/engines/GoogleMaps";
+import { fetchWithMapbox } from "@/engines/Mapbox";
+import { fetchWithOSRM } from "@/engines/OSRM";
+import { fetchWithORS } from "@/engines/OpenRouteService";
 import { RouteRequest, RouteResponse } from "@/types";
 import { createError, isValidCoordinate } from "@/util";
 
@@ -21,7 +21,7 @@ function validateRouteRequest(options: RouteRequest): RouteResponse | null {
   if (!options.engine || typeof options.engine !== "string") {
     return {
       success: false,
-      provider: "Unknown",
+      engine: "Unknown",
       error: "Invalid routing engine.",
     };
   }

@@ -31,7 +31,7 @@ export async function fetchWithOSRM(
 
   return {
     success: true,
-    provider: "OSRM",
+    engine: "OSRM",
     geojson: { type: "FeatureCollection", features },
   };
 }

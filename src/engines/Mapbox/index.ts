@@ -39,7 +39,7 @@ export async function fetchWithMapbox(
 
   return {
     success: true,
-    provider: "Mapbox",
+    engine: "Mapbox",
     geojson: { type: "FeatureCollection", features },
   };
 }

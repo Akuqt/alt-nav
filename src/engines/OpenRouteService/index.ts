@@ -50,7 +50,7 @@ export async function fetchWithORS(data: RouteRequest): Promise<RouteResponse> {
 
   return {
     success: true,
-    provider: "OpenRouteService",
+    engine: "OpenRouteService",
     geojson: { type: "FeatureCollection", features },
   };
 }

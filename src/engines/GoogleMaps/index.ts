@@ -55,7 +55,7 @@ export async function fetchWithGoogleMaps(
 
   return {
     success: true,
-    provider: "GoogleMaps",
+    engine: "GoogleMaps",
     geojson: { type: "FeatureCollection", features },
   };
 }

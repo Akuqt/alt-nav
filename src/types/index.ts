@@ -42,7 +42,7 @@ export interface RouteFeature {
 
 export interface RouteResponse {
   success: boolean;
-  provider: RoutingEngine | "Unknown";
+  engine: RoutingEngine | "Unknown";
   geojson?: RouteFeatureCollection;
   error?: string;
 }
