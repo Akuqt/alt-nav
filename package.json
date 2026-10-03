@@ -1,5 +1,5 @@
 {
-  "name": "altnav",
+  "name": "alt-nav",
   "version": "1.0.0",
   "description": "Alternative Navigation routes for geolocalization and mapping applications.",
   "type": "module",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Akuqt/altnav.git"
+    "url": "git+https://github.com/Akuqt/alt-nav.git"
   },
   "keywords": [
     "geolocation",
@@ -38,9 +38,9 @@
     "routes"
   ],
   "bugs": {
-    "url": "https://github.com/Akuqt/altnav/issues"
+    "url": "https://github.com/Akuqt/alt-nav/issues"
   },
-  "homepage": "https://github.com/Akuqt/altnav/#readme",
+  "homepage": "https://github.com/Akuqt/alt-nav/#readme",
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
     "@commitlint/config-conventional": "^21.2.2",
